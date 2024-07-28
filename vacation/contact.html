@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn about the Game of Golf">
+        <meta name="author" content="Preston Everett">
+        <title>Budget Vacation: Home</title>
+        <link rel="stylesheet" href="rookie.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Oswald&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header id="top">
+            <img src="images/logo.png" alt="site logo" width="100" height="58">
+            <div>
+                <h1>Budget Vacation</h1>
+                <p>Best Destinations -> Best Price</p>
+            </div>
+        </header>
+        <!-- Start of page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="video.html">Media</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Start of page content -->
+        <main>
+            <h1>Request Lessons</h1>
+
+        <form method="get" class="myForm" action="thanks.html">
+        
+            <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required> </label>
+            <label>Last Name*<input type="text" name="lname" required> </label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="555-555-5555"> </label> 
+            <label>Email Address*<input type="email" name="email" required> </label> 
+            </fieldset>
+                
+            <fieldset>
+            <legend>Best Way to Contact</legend>
+                <label><input type="radio" name="method" value="phone">Phone Call</label>
+                <label><input type="radio" name="method" value="text">Text Message</label>
+                <label><input type="radio" name="method" value="email">Email</label>
+            </fieldset>
+                
+            <fieldset>
+            <legend>Preferred Airlines</legend>
+                <label><input type="checkbox" name="delta" value="chosen">Delta</label>
+                <label><input type="checkbox" name="southwest" value="chosen">Southwest</label>
+                <label><input type="checkbox" name="jetblue" value="chosen">JetBlue</label>
+                <label><input type="checkbox" name="aeromexico" value="chosen">Aeromexico</label>
+            
+                
+                <label>Desired Vacation Week
+                <select name="week">
+                <option value="none">Please Select</option>
+                <option value="week1">July 1st through July 7th</option>
+                <option value="week2">July 8th through July 14th</option>
+                <option value="week3">July 15th through July 21st</option>
+                <option value="week4">July 22nd through July 28th</option>
+                </select></label>
+            
+            </fieldset>
+                
+                <label>Comments
+                <textarea name="comments"></textarea>  
+            </label>
+
+        <input type="submit" value="Send Lesson Request">
+        </form>
+            
+        </main>
+        <!-- Start of page footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Preston Everett &bull; <a href="10855262@uvu.edu">Email Us</a></p>
+        </footer>
+    
+    </body>
+</html>
